@@ -1,11 +1,35 @@
 # Task 3 - Integration Monitoring Dashboard
 
-لوحة تحكم تفاعلية تم تطويرها لمراقبة عمليات ה-Integration وإعادة محاولة الطلبات الفاشلة.
+لوحة تحكم تفاعلية لمراقبة عمليات Integration، وعرض حالة الطلبات وإعادة محاولة الطلبات الفاشلة.
 
 ## Features
-- **Statistics:** إحصائيات فورية (Total, Successful, Failed, Pending).
-- **Filter:** فلترة حسب الحالة، الهاتف، والتاريخ.
-- **Retry Mechanism:** إمكانية إعادة محاولة إرسال الطلب الفاشل بنقرة زر.
 
-## Access URL
-`http://localhost/task3-monitoring-dashboard/index.php`
+- عرض إحصائيات الطلبات:
+  - Total Requests
+  - Successful
+  - Failed
+  - Pending
+- فلترة السجلات حسب:
+  - Status
+  - Phone Number
+  - Created Date
+- عرض آخر API Response.
+- إعادة محاولة إرسال الطلبات الفاشلة باستخدام Retry.
+- تحديث حالة الطلب وعدد محاولات الإعادة في قاعدة البيانات.
+
+## Requirements
+
+- XAMPP أو أي بيئة تدعم PHP وMySQL.
+- PHP 7.4 أو أحدث.
+- MySQL.
+- متصفح ويب.
+- تفعيل PHP cURL Extension.
+
+## Installation Steps
+
+### 1. Clone the Repository
+
+ضع المشروع داخل مجلد `htdocs` في XAMPP:
+
+```text
+C:\xampp\htdocs\
